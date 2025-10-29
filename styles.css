@@ -12,15 +12,13 @@ h1{
   margin: 24px 0;
 }
 
-/* CARD GRID (responsive) */
-.projects{
-  /* use grid or flex; grid is simplest */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  padding: 0 16px;
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.project {
+width: 30%;
+margin: 10px;
+padding: 20px 10px;
+background: white; /* pick a color */
+border-radius: 25%;
 }
 
 /* Project card */
@@ -50,5 +48,6 @@ a {
   text-align: center;
   margin: 15px;
 }
+
 
 
