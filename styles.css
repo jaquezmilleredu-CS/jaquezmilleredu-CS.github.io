@@ -33,15 +33,22 @@ h1{
   border: 1px solid rgba(255,255,255,.1);
 }
 
-/* Images fit the card */
-.project img{
+.project img {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  border: 2px solid rgb(126, 14, 201); /* choose any accent color */
   display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-top: 10px;
 }
 
-/* Links */
-a{ color: #cde3ff; }
-a:hover{ text-decoration: underline; }
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+.project p {
+  text-align: center;
+  margin: 15px;
+}
+
+
