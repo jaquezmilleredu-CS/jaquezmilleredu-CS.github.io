@@ -1,76 +1,74 @@
-/* Page background + default text */
+/* -------- PAGE BASE ---------- */
 body{
   margin: 0;
-  background: #7b4a2e;                 /* brown background like example */
+  background: #0dd1eb;                  /* brown like example */
   font-family: Arial, Helvetica, sans-serif;
-  color: #fdf5e6;                      /* light text */
+  color: #000;                          /* default text */
 }
 
-/* Main name at top */
 h1{
   text-align: center;
-  color: #fbe0b2;
-  margin: 16px 0 8px;
+  color: #fbe0b2;                       /* light beige */
+  margin: 24px 0 8px;
 }
 
-/* "Highlighted projects" heading */
+/* optional: section heading "Highlighted projects" */
 h2{
   text-align: center;
   color: #fbe0b2;
-  margin: 0 0 8px;
-}
-
-/* ---- GRID of project cards ---- */
-.projects{
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  padding: 24px 24px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  border-top: 12px solid #4f7260;
-  border-bottom: 12px solid #4f7260;
-}
-
-/* Each green “panel” like the example */
-.project{
-  background: #4f7260;
-  border-radius: 4px;
-  padding: 24px 24px 32px;
-  width: 30%;                          /* 3 across on desktop */
-  min-width: 280px;                    /* wrap on small screens */
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* Titles inside each card */
-.project h3{
   margin: 0 0 16px;
-  color: #fbe0b2;
-  font-size: 1.4rem;
 }
 
-/* Thumbnails */
+/* -------- HIGHLIGHTED PROJECTS GRID ---------- */
+
+/* container that holds ALL the project cards */
+.projects{
+  max-width: 1400px;
+  margin: 0 auto 40px;
+  padding: 32px 32px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* 3 across */
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* each green panel */
+.project{
+  background: #4f7260;                   /* green card */
+  border-radius: 2px;
+  padding: 32px 32px 28px;
+  box-sizing: border-box;
+}
+
+/* title inside card */
+.project h3{
+  margin: 0 0 24px;
+  text-align: center;
+  color: #fbe0b2;
+  font-size: 1.6rem;
+}
+
+/* image inside card */
 .project img{
   display: block;
-  margin: 0 auto 16px;
-  max-width: 220px;
-  width: 70%;
+  margin: 0 auto 20px;
+  max-width: 260px;
+  width: 40%;                             /* similar size to example */
   height: auto;
   border: 3px solid #ffffff;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   background: #fff;
 }
 
-/* Descriptions */
+/* description text at bottom of card */
 .project p{
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   color: #fdf5e6;
+  text-align: left;                       /* left like example */
 }
 
-/* Links */
+/* links (titles & images) */
 a{
   text-decoration: none;
   color: inherit;
@@ -79,3 +77,14 @@ a:hover h3{
   text-decoration: underline;
 }
 
+/* make it stack on small screens */
+@media (max-width: 1000px){
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px){
+  .projects{
+    grid-template-columns: 1fr;
+  }
+}
