@@ -1,108 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Resume - Jaquez Miller</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        h1, h2{
-            margin-bottom: 4px;
-        }
-        h2{
-            margin-top: 24px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 4px;
-        }
-        .section{
-            margin-bottom: 16px;
-        }
-        .subheading{
-            font-weight: bold;
-        }
-        .right{
-            float: right;
-        }
-        .clearfix::after{
-            content: "";
-            display: block;
-            clear: both;
-        }
-        ul{
-            margin-top: 4px;
-        }
-    </style>
+  <title>CSCE 190: Jaquez Miller</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Name at top -->
+  <h1>Jaquez Miller</h1>
 
-    <!-- Header -->
-    <h1>Jaquez Miller</h1>
-    <p>Spartanburg, SC | 864-123-4567 | jaquezm@email.sc.edu</p>
+  <!-- About me -->
+  <div class="about">
+    <h2>About me</h2>
+    <p>
+      My mission is to stay disciplined, keep learning, and challenge myself daily—whether in class,
+      coding, or content creation—so I can grow into the best version of myself and inspire others
+      to do the same.
+    </p>
+    <span>
+    My resume:
+    <a href="files/resume.pdf">PDF version</a>
+    | <a href="resume.html">HTML version</a>
+</span>
 
-    <!-- Education -->
-    <div class="section">
-        <h2>Education</h2>
+  </div>
 
-        <div class="clearfix">
-            <span class="subheading">University of South Carolina - Columbia</span>
-            <span class="right">Columbia, SC</span>
-        </div>
-        <div class="clearfix">
-            <span>Bachelor of Computer Science</span>
-            <span class="right">May 2027</span>
-        </div>
-        <p>Minor: None</p>
-        <p>GPA: 3.3</p>
+  <!-- Skills (you can add more content later) -->
+  <div class="skills">
+    <h2>Skills</h2>
+  </div>
 
-        <div class="clearfix">
-            <span class="subheading">Spartanburg Community College</span>
-            <span class="right">Spartanburg, SC</span>
-        </div>
-        <p>Transferred</p>
+  <!-- Highlighted projects heading -->
+  <h2>Highlighted projects</h2>
+
+  <!-- ALL project cards go inside this ONE .projects container -->
+  <div class="projects">
+
+    <!-- Problem Statement Assignment -->
+    <section class="project">
+      <a href="files/statement.pdf" target="_blank">
+        <h3>Problem Statement</h3>
+      </a>
+      <a href="files/statement.pdf" target="_blank">
+        <img src="images/problem.png" alt="Problem statement">
+      </a>
+      <p>
+        This project aims to solve the ongoing challenge of limited and unclear
+        campus parking availability by developing a smart parking management system
+        that uses real-time data to display open spots and improve efficiency across campus.
+      </p>
+    </section>
+
+    <!-- Affinity Diagram Assignment -->
+    <section class="project">
+      <a href="files/Affinity_DOC.pdf" target="_blank">
+        <h3>Affinity Diagram</h3>
+      </a>
+      <a href="files/Affinity_DOC.pdf" target="_blank">
+        <img src="images/Affinity_IMG.png" alt="Affinity diagram">
+      </a>
+      <p>
+        Text describing the diagram.
+      </p>
+    </section>
+
+    <!-- Sketches Assignment -->
+    <section class="project">
+      <a href="files/Sketches_DOC.pdf" target="_blank">
+        <h3>Sketches</h3>
+      </a>
+      <a href="files/Sketches_DOC.pdf" target="_blank">
+        <img src="images/Sketches_IMG.png" alt="Smart Campus Parking sketches">
+      </a>
+      <p>
+        Three sketches showing the Smart Campus Parking interface from
+        different perspectives: the user dashboard, live lot map, and data overview.
+        Click the image to view all three in the full PDF.
+      </p>
+    </section>
+    <a href="https://github.com/jaquezmilleredu-CS/JavaCode" target="_blank">
+    <!-- Java repository -->
+    <section class="project">
+      <a href="https://github.com/jaquezmilleredu-CS/JavaCode" target="_blank">
+        <h3>JavaCode – Fleet of Vehicles Program</h3>
+    </a>
+
+    <a href="https://github.com/jaquezmilleredu-CS/JavaCode" target="_blank">
+      </a>
+      <a href="https://github.com/jaquezmilleredu-CS/JavaCode" target="_blank">
+        <img src="images/p-80-java.webp" alt="Java project thumbnail">
+    </a>
+
+    <p>
+      </a>
+      <p>
+        This repository contains my Java Fleet of Vehicles project.
+        It demonstrates object-oriented programming using classes,
+        constructors, methods, and inheritance in Java.
+
+</p>
+</section>
+</div>
+        <h2>Highlighted projects</h2>
     </div>
-
-    <!-- Awards  ai assitance -->
-    <div class="section">
-        <h2>Awards, Honors &amp; Scholarships</h2>
-        <ul>
-            <li>Dean's List (2 times) at Spartanburg Community College</li>
-        </ul>
+    <div class="contact">
+        <h2>Contact me</h2>
     </div>
-
-    <!-- Experience -->
-    <div class="section">
-        <h2>Experience</h2>
-
-        <div class="clearfix">
-            <span class="subheading">Warehouse Associate – Amazon</span>
-            <span class="right">Spartanburg & Columbia, SC</span>
-        </div>
-        <div class="clearfix">
-            <span>October 2021 - Present</span>
-        </div>
-
-        <ul>
-            <li>Resolved operational issues efficiently to maintain workflow and productivity.</li>
-            <li>Consistently met deadlines and performance goals in a fast-paced environment.</li>
-            <li>Collaborated with team members to ensure smooth order fulfillment.</li>
-            <li>Adapted quickly to new procedures and technologies during site transfer.</li>
-        </ul>
-    </div>
-
-    <!-- Skills ai -->
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Microsoft: Word, Excel, PowerPoint</li>
-            <li>Video Editing: CapCut, Filmora, DaVinci Resolve</li>
-        </ul>
-    </div>
-
-</body>
+ </body>
 </html>
-
 
